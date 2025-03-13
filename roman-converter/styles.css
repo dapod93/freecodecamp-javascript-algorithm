@@ -21,11 +21,6 @@ h1 {
   color: #333;
 }
 
-form fieldset {
-  border: none;
-  padding: 0;
-}
-
 input[type="number"] {
   width: 80%;
   padding: 12px;
