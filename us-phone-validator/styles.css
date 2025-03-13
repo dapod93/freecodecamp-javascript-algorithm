@@ -28,13 +28,6 @@ h1 {
   color: #333;
 }
 
-#middle-this-thing {
-  background-color: #ffffff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
 label {
   font-size: 16px;
   color: #333;
@@ -57,24 +50,7 @@ input[type="text"]:focus {
   outline: none;
 }
 
-#results-div {
-  margin-top: 20px;
-  padding: 10px;
-  background-color: #f4f4f4;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
-  color: #333;
-  display: none;
-}
-
-.phone-footer {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-
-.btn-styles {
+button {
   width: 45%;
   padding: 12px;
   font-size: 16px;
@@ -86,10 +62,37 @@ input[type="text"]:focus {
   transition: background-color 0.3s ease;
 }
 
-.btn-styles:hover {
+button:hover {
   background-color: #0056b3;
 }
 
-#results-div.visible {
+#middle-this-thing {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#middle-this-thing-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.results-div {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 18px;
+  color: #333;
+}
+
+.hidden {
+  display: none;
+}
+
+.results-div.visible {
   display: block;
 }
