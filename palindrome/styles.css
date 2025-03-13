@@ -1,6 +1,3 @@
-/* styles.css */
-
-/* Set the body style */
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f9;
@@ -11,7 +8,6 @@ body {
   height: 100vh;
 }
 
-/* Style the container div */
 #middle-this-thing {
   background-color: #ffffff;
   padding: 30px;
@@ -21,14 +17,12 @@ body {
   width: 300px;
 }
 
-/* Style the paragraph */
 #middle-this-thing p {
   font-size: 18px;
   color: #333;
   margin-bottom: 15px;
 }
 
-/* Style the input field */
 #text-input {
   width: 80%;
   padding: 10px;
@@ -39,12 +33,10 @@ body {
   outline: none;
 }
 
-/* Focus effect on input */
 #text-input:focus {
   border-color: #0056b3;
 }
 
-/* Style the button */
 #check-btn {
   background-color: #007bff;
   color: white;
@@ -56,12 +48,10 @@ body {
   transition: background-color 0.3s ease;
 }
 
-/* Button hover effect */
 #check-btn:hover {
   background-color: #0056b3;
 }
 
-/* Style the result paragraph */
 #result {
   font-size: 16px;
   color: #333;
