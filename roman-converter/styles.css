@@ -8,7 +8,7 @@
 /* Set the font for the entire page */
 body {
   font-family: "Arial", sans-serif;
-  background-color: #f0f0f0;
+  background-color: #f4f4f9;
   color: #333;
   display: flex;
   justify-content: center;
@@ -19,9 +19,9 @@ body {
 
 /* Center the main container and give it some padding */
 #middle-this-thing {
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 30px;
-  border-radius: 8px;
+  border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   width: 100%;
@@ -32,16 +32,18 @@ body {
 h1 {
   font-size: 24px;
   margin-bottom: 20px;
-  color: #4caf50;
+  color: #333;
 }
 
-/* Style the form elements */
-.form {
-  width: 100%;
+/* Remove the border and padding from the fieldset */
+form fieldset {
+  border: none;
+  padding: 0;
 }
 
+/* Style the input field */
 input[type="number"] {
-  width: 100%;
+  width: 80%;
   padding: 12px;
   font-size: 16px;
   border: 2px solid #ccc;
@@ -50,17 +52,18 @@ input[type="number"] {
   transition: border-color 0.3s ease;
 }
 
+/* Focus effect on input */
 input[type="number"]:focus {
-  border-color: #4caf50;
+  border-color: #007bff;
   outline: none;
 }
 
 /* Style the button */
 button {
-  width: 100%;
+  width: 80%;
   padding: 12px;
   font-size: 18px;
-  background-color: #4caf50;
+  background-color: #007bff;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -68,8 +71,9 @@ button {
   transition: background-color 0.3s ease;
 }
 
+/* Button hover effect */
 button:hover {
-  background-color: #45a049;
+  background-color: #0056b3;
 }
 
 /* Style the output area */
@@ -86,4 +90,9 @@ button:hover {
 /* Hide the output initially */
 .hidden {
   display: none;
+}
+
+/* Visible output */
+.output.visible {
+  display: block;
 }
