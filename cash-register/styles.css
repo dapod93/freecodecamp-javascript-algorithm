@@ -16,16 +16,9 @@ body {
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 24px;
   margin-bottom: 20px;
   color: #333;
-}
-
-label {
-  font-size: 16px;
-  color: #333;
-  margin-bottom: 10px;
-  display: block;
 }
 
 input[type="number"] {
@@ -44,11 +37,11 @@ input[type="number"]:focus {
 }
 
 button {
-  width: 45%;
+  width: 80%;
   padding: 12px;
-  font-size: 16px;
+  font-size: 18px;
   background-color: #007bff;
-  color: white;
+  color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -64,15 +57,12 @@ button:hover {
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
 }
 
-#middle-this-thing-footer {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-
-.change-due {
+.output {
   margin-top: 20px;
   padding: 10px;
   background-color: #f4f4f4;
@@ -86,6 +76,6 @@ button:hover {
   display: none;
 }
 
-.change-due.visible {
+.output.visible {
   display: block;
 }
