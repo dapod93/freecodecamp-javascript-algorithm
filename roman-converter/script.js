@@ -26,7 +26,7 @@ const convertToRoman = (num) => {
     .join("");
 };
 
-const isValid = (str, int) => {
+const validateInput = (str, int) => {
   let errMsg = "";
 
   if (!str || str.match(/[e.]/g)) {
@@ -53,7 +53,7 @@ document.getElementById("convert-btn").addEventListener("click", () => {
   output.innerText = "";
   output.classList.remove("alert");
 
-  if (isValid(numStr, int)) {
+  if (validateInput(numStr, int)) {
     output.innerText = convertToRoman(int);
   }
 });
