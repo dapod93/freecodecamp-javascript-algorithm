@@ -32,7 +32,7 @@ document.getElementById("purchase-btn").addEventListener("click", () => {
   }
 
   const cashInCents = Math.round(Number(cash.value) * 100);
-  const priceInCents = Math.round(total * 100);
+  const priceInCents = Math.round(price * 100);
   if (cashInCents < priceInCents) {
     alert("Customer does not have enough money to purchase the item");
     clearDom();
@@ -80,6 +80,6 @@ document.getElementById("purchase-btn").addEventListener("click", () => {
 
   displayChangeDue.classList.remove("hidden");
   displayChangeDue.innerText = "";
-  displayChangeDue.innerText = `Status: ${result.status}`;
-  displayChangeDue.innerText += result.change.map(([denominationName, amount]) => `${denominationName}: $${amount}`).join("");
+  displayChangeDue.innerText = `Status: ${result.status}\n`;
+  displayChangeDue.innerText += result.change.map(([denominationName, amount]) => `${denominationName}: $${amount}\n`).join("");
 });
