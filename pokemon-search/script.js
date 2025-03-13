@@ -51,7 +51,6 @@ document.getElementById("search-button").addEventListener("click", async () => {
     speed.innerText = responseData.stats[5].base_stat;
   } catch (err) {
     clearDom();
-    // alert("Pokémon not found");
-    alert(err);
+    alert("Pokémon not found");
   }
 });
