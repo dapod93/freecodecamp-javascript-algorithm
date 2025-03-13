@@ -45,16 +45,7 @@ const isValid = (str, int) => {
   return false;
 };
 
-document.getElementById("form").addEventListener("submit", (e) => {
-  e.preventDefault();
-  result();
-});
-
 document.getElementById("convert-btn").addEventListener("click", () => {
-  result();
-});
-
-const result = () => {
   const numStr = document.getElementById("number").value;
   const int = parseInt(numStr, 10);
 
@@ -65,4 +56,4 @@ const result = () => {
   if (isValid(numStr, int)) {
     output.innerText = convertToRoman(int);
   }
-};
+});
