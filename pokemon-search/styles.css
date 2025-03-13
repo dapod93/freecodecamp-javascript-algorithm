@@ -59,6 +59,34 @@ button:hover {
   background-color: #0056b3;
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #f0f0f0;
+  font-weight: normal;
+}
+
+td {
+  font-size: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f0f0f0;
+}
+
 #middle-this-thing {
   background-color: #ffffff;
   padding: 30px;
@@ -69,20 +97,55 @@ button:hover {
   max-width: 400px;
 }
 
-.results-div {
+.output {
   margin-top: 20px;
-  padding: 10px;
-  background-color: #f4f4f4;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 18px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.top-container {
+  margin-bottom: 20px;
+  min-height: 200px;
+}
+
+.name-and-id {
+  font-size: 20px;
+  font-weight: bold;
   color: #333;
 }
 
-.hidden {
-  display: none;
+.size {
+  font-size: 16px;
+  color: #777;
+  margin-top: 10px;
 }
 
-.results-div.visible {
-  display: block;
+#sprite-container {
+  margin-top: 15px;
+  text-align: center;
+}
+
+#sprite-container img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+#types {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.bottom-container {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 2px solid #f0f0f0;
+}
+
+.speed {
+  font-weight: bold;
+  color: #007bff;
 }
