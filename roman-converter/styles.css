@@ -15,16 +15,6 @@ body {
   margin: 0;
 }
 
-#middle-this-thing {
-  background-color: #ffffff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  width: 100%;
-  max-width: 400px;
-}
-
 h1 {
   font-size: 24px;
   margin-bottom: 20px;
@@ -65,6 +55,16 @@ button {
 
 button:hover {
   background-color: #0056b3;
+}
+
+#middle-this-thing {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
 }
 
 .output {
