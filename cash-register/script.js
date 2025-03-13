@@ -41,7 +41,6 @@ document.getElementById("purchase-btn").addEventListener("click", () => {
 
   if (cashInCents === priceInCents) {
     renderChangeDue("No change due - customer paid with exact cash");
-    clearDom();
     return;
   }
 
