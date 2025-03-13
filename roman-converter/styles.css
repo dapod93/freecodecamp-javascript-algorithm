@@ -1,11 +1,9 @@
-/* Reset some basic styling */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Set the font for the entire page */
 body {
   font-family: "Arial", sans-serif;
   background-color: #f4f4f9;
@@ -17,7 +15,6 @@ body {
   margin: 0;
 }
 
-/* Center the main container and give it some padding */
 #middle-this-thing {
   background-color: #ffffff;
   padding: 30px;
@@ -28,20 +25,17 @@ body {
   max-width: 400px;
 }
 
-/* Style the header */
 h1 {
   font-size: 24px;
   margin-bottom: 20px;
   color: #333;
 }
 
-/* Remove the border and padding from the fieldset */
 form fieldset {
   border: none;
   padding: 0;
 }
 
-/* Style the input field */
 input[type="number"] {
   width: 80%;
   padding: 12px;
@@ -52,13 +46,11 @@ input[type="number"] {
   transition: border-color 0.3s ease;
 }
 
-/* Focus effect on input */
 input[type="number"]:focus {
   border-color: #007bff;
   outline: none;
 }
 
-/* Style the button */
 button {
   width: 80%;
   padding: 12px;
@@ -71,12 +63,10 @@ button {
   transition: background-color 0.3s ease;
 }
 
-/* Button hover effect */
 button:hover {
   background-color: #0056b3;
 }
 
-/* Style the output area */
 .output {
   margin-top: 20px;
   padding: 10px;
@@ -87,12 +77,10 @@ button:hover {
   color: #333;
 }
 
-/* Hide the output initially */
 .hidden {
   display: none;
 }
 
-/* Visible output */
 .output.visible {
   display: block;
 }
