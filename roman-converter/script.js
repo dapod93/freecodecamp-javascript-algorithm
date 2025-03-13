@@ -1,7 +1,7 @@
 const output = document.getElementById("output");
 
 const convertToRoman = (num) => {
-  const ref = [
+  const romanNumeral = [
     ["M", 1000],
     ["CM", 900],
     ["D", 500],
@@ -16,16 +16,14 @@ const convertToRoman = (num) => {
     ["IV", 4],
     ["I", 1],
   ];
-  const res = [];
 
-  ref.forEach(function (arr) {
-    while (num >= arr[1]) {
-      res.push(arr[0]);
-      num -= arr[1];
-    }
-  });
-
-  return res.join("");
+  return romanNumeral
+    .map(([roman, value]) => {
+      let count = Math.floor(num / value);
+      num %= value;
+      return new Array(count).fill(roman).join("");
+    })
+    .join("");
 };
 
 const isValid = (str, int) => {
