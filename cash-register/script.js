@@ -29,6 +29,7 @@ const displayChangeDue = document.getElementById("change-due");
 
 const renderChangeDue = (msg) => {
   displayChangeDue.classList.remove("hidden");
+  displayChangeDue.innerText = "";
   displayChangeDue.innerText = msg;
 };
 
@@ -85,13 +86,12 @@ document.getElementById("purchase-btn").addEventListener("click", () => {
   }
 
   if (changeDue > 0) {
-    displayChangeDue.innerHTML = "<p>Status: INSUFFICIENT_FUNDS</p>";
+    renderChangeDue("Status: INSUFFICIENT_FUNDS");
     return;
   }
 
   displayChangeDue.classList.remove("hidden");
   displayChangeDue.innerText = "";
   displayChangeDue.innerText = `Status: ${result.status}`;
-  displayChangeDue.innerText += result.change.map(([denominationName, amount]) => `<p>${denominationName}: $${amount}</p>`).join("");
-  updateUI(result.change);
+  displayChangeDue.innerText += result.change.map(([denominationName, amount]) => `${denominationName}: $${amount}`).join("");
 });
