@@ -64,3 +64,21 @@ h1 {
   margin-top: 20px;
   font-weight: bold;
 }
+
+.result {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 18px;
+  color: #333;
+}
+
+.hidden {
+  display: none;
+}
+
+.result.visible {
+  display: block;
+}
