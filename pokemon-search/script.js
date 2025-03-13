@@ -10,8 +10,6 @@ const specialAttack = document.getElementById("special-attack");
 const specialDefense = document.getElementById("special-defense");
 const speed = document.getElementById("speed");
 
-const getPokemon = async () => {};
-
 const clearDom = () => {
   const sprite = document.getElementById("sprite");
   if (sprite) sprite.remove();
