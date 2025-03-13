@@ -1,0 +1,15 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#middle-this-thing {
+  padding: 0px 10px 0px 10px;
+  border: 3px solid black;
+  border-radius: 10px;
+  text-align: center;
+}
