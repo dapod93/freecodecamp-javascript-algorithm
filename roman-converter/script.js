@@ -27,45 +27,40 @@ const convertToRoman = (num) => {
 };
 
 const isValid = (str, int) => {
-  let errText = "";
+  let errMsg = "";
 
   if (!str || str.match(/[e.]/g)) {
-    errText = "Please enter a valid number.";
+    errMsg = "Please enter a valid number.";
   } else if (int < 1) {
-    errText = "Please enter a number greater than or equal to 1.";
+    errMsg = "Please enter a number greater than or equal to 1.";
   } else if (int > 3999) {
-    errText = "Please enter a number less than or equal to 3999.";
+    errMsg = "Please enter a number less than or equal to 3999.";
   } else {
     return true;
   }
 
-  output.innerText = errText;
+  output.innerText = errMsg;
   output.classList.add("alert");
 
   return false;
 };
 
-const clearOutput = () => {
-  output.innerText = "";
-  output.classList.remove("alert");
-};
-
 document.getElementById("form").addEventListener("submit", (e) => {
   e.preventDefault();
-  updateUI();
+  result();
 });
 
 document.getElementById("convert-btn").addEventListener("click", () => {
-  updateUI();
+  result();
 });
 
-const updateUI = () => {
+const result = () => {
   const numStr = document.getElementById("number").value;
   const int = parseInt(numStr, 10);
 
   output.classList.remove("hidden");
-
-  clearOutput();
+  output.innerText = "";
+  output.classList.remove("alert");
 
   if (isValid(numStr, int)) {
     output.innerText = convertToRoman(int);
