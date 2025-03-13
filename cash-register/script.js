@@ -12,18 +12,6 @@ let cid = [
 ];
 
 const denominations = [10000, 2000, 1000, 500, 100, 25, 10, 5, 1];
-const currencyNameMap = {
-  PENNY: "Pennies",
-  NICKEL: "Nickels",
-  DIME: "Dimes",
-  QUARTER: "Quarters",
-  ONE: "Ones",
-  FIVE: "Fives",
-  TEN: "Tens",
-  TWENTY: "Twenties",
-  "ONE HUNDRED": "Hundreds",
-};
-
 const cash = document.getElementById("cash");
 const displayChangeDue = document.getElementById("change-due");
 
